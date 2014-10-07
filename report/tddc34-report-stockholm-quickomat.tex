@@ -1,6 +1,7 @@
 \documentclass[twocolumn]{article}
 
 % package loading
+\usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{amsmath}
@@ -8,11 +9,13 @@
 \usepackage{amsfonts}
 \usepackage{hyphenat}
 
+\usepackage{natbib} % Harward style references
+
 \providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
 
 \title{Report on Quickomat}
 \author{Johan Angelstam, Guanqun Li, Renquan Wang, Yunsheng Kong\\
-	 \textless\{johan791, guali867, renwa331, yunko064\}@student.liu.se\textgreater}
+  \{johan791|guali867|renwa331|yunko064\}@student.liu.se}
 %\date{2014}
 
 \begin{document}
@@ -22,12 +25,45 @@
     \begin{abstract}
       ...
     \end{abstract}
-    \keywords{quickomat, user interface}
+    \keywords{quickomat, user interface evaluation}
+    \vspace{2em}
   \end{@twocolumnfalse}
-  \section{Introduction}
-  \section{Background}
-  \section{Framework}
-  \section{Discussion}
-  \section{Summary}
   ]
+\section{Introduction}
+This report was as an evaluation project of the course in technical,
+economical and societal evaluation of IT-products in Linköping
+University.
+
+\subsection{Background}
+In this section, we present some basic background information on
+vending machines, Quickomat, usability of information systems and
+safety condition about public transportation. We will introduce the
+main motivation and goals for this report, as well as the framework
+and methodology we studied for the evaluation of this area.
+
+\subsection{Quickomat}
+Quickomat is a vending machine which is operated by the company
+Quickomat AB. The machine is often found at public places such as
+train stations, shopping malls and universities in the south of
+Sweden. Through the machines Quickomat offers public transport
+authorities and operators a service for ticket sales.
+
+Using the Quickomat service, operators can easily sell their tickets
+from hundreds of new locations without any investments in
+infrastructure. Customers can buy tickets for public transportation
+and concerts or top-up their mobile phone account from the nearest
+machine. In 2008 the company had around 50 machines in use,
+\cite{RealDeals2008}.
+
+\subsection{Quickomat}
+
+\section{Background}
+\section{Framework}
+\section{Discussion}
+\section{Summary}
+
+% Bibliography
+\cite{*}
+\bibliographystyle{plainnat}
+\bibliography{tddc34-report-stockholm-quickomat}
 \end{document}
