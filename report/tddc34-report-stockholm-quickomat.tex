@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{amsfonts}
 \usepackage{hyphenat}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 
 \usepackage{enumitem}
 \setlist[description]{style=nextline}
@@ -118,15 +119,24 @@ In our case study, we choose the “\emph{Heuristic Evaluation}” as our method
 Try to answer the question “\emph{How to test the interface?}”  with choosing the approaches like “Develop a set of tasks and ask the evaluators to carry them out” or like “Provide evaluators with the goals of the system and allow them to develop their own tasks” (Nicky Danino, 2001).
 
 \subsubsection{Choose Evaluators}
-This is an important step. The more evaluators we set and choose in the process, the more usability problems we may find in the end. And also the selection of evaluators is also related with the result, which can be divided into two categories normally, those with experience and without experience (Nicky Danimo, 2001). We can also see the impact of numbers of evaluators on the proportion of usability from Figure 1, which emphasize its important status in the heurisitic evaluation.
+This is an important step. The more evaluators we set and choose in the process, the more usability problems we may find in the end. And also the selection of evaluators is also related with the result, which can be divided into two categories normally, those with experience and without experience (Nicky Danimo, 2001). We can also see the impact of numbers of evaluators on the proportion of usability from Figure \ref{fig:usability-problems-found}, which emphasize its important status in the heurisitic evaluation.
 
-% Figure 1 (Jakob Nielson,1995)
-% Curve showing the proportion of usability problems in an interface found by heuristic evaluation using various numbers of evaluators.
+\begin{figure}
+  \centering
+  \includegraphics[width=\columnwidth, clip=true, trim=0 0 140 0]{fig/usability-problems-found.png}
+  \caption{Curve showing the proportion of usability problems in an interface found by heuristic evaluation using various numbers of evaluators. (Jakob Nielson,1995)}
+  \label{fig:usability-problems-found}
+\end{figure}
 
 \subsubsection{Review Heuristics}
 After above, we need to brief the evaluators about the heuristics they are going to assess. And for setting up our own heuristics, Jakob Nielson mentioned 10 general principles for interaction design (Jakob Nielson, 1995) which can be regarded as the basic rules to follow when design the heuristics.
 
-% Figure 2 Source:http://planbozchi24.wordpress.com/2013/09/21/heuristic-evaluation-of-rediffmail-an-existing-mail-client/
+\begin{figure}
+  \centering
+  \includegraphics[width=\columnwidth, clip=true, trim=380 5 300 160]{fig/heuristic-evaluation.png}
+  \caption{Source: \url{http://planbozchi24.wordpress.com/2013/09/21/heuristic-evaluation-of-rediffmail-an-existing-mail-client/}}
+  \label{fig:heuristic-evaluation}
+\end{figure}
 
 \begin{description}
   \item[Visibility of System Status]
