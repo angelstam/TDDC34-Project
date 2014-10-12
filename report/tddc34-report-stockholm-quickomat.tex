@@ -13,6 +13,10 @@
 \usepackage{enumitem}
 \setlist[description]{style=nextline}
 
+\usepackage{tabularx,caption,booktabs,array}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcommand{\rowgroup}[1]{\hspace{-1em}#1}
+
 \usepackage[round]{natbib} % Harward style references
 
 \providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
@@ -382,8 +386,42 @@ It’s important that the usability of system should be well design to meet the 
 \subsection{Social Evaluation}
 In this section we analyze and discuss the security assessment part of the Quickomat.
 
+\begin{table*}[t]
+\begin{tabularx}{\textwidth}{@{\extracolsep{\fill} }>{\quad}l *{12}Y}
+\toprule
+\rowgroup{Effect Variables & \multicolumn{6}{c}{Student} & \multicolumn{6}{c}{Employed}} \\
+\cmidrule(r){2-7} \cmidrule(r){8-13}
+
+& \multicolumn{2}{c}{Men}
+& \multicolumn{2}{c}{Women}
+& \multicolumn{2}{c}{Total}
+& \multicolumn{2}{c}{Men}
+& \multicolumn{2}{c}{Women}
+& \multicolumn{2}{c}{Total} \\
+& \multicolumn{2}{c}{n=118}
+& \multicolumn{2}{c}{n=36}
+& \multicolumn{2}{c}{n=154}
+& \multicolumn{2}{c}{n=6}
+& \multicolumn{2}{c}{n=5}
+& \multicolumn{2}{c}{n=11} \\
+\cmidrule(r){2-7} \cmidrule(r){8-13}
+
+& Freq & \% & Freq & \% & Freq & \% & Freq & \% & Freq & \% & Freq & \% \\
+\midrule
+\rowgroup{Perception of Safety} \\
+Much & 17 & 14 & 15 & 47 & 32 & 21 & 1 & 17 & 1 & 20 & 2 & 18 \\
+A Lot & 48 & 41 & 14 & 39 & 62 & 40 & 0 & 0 & 3 & 60 & 3 & 27 \\
+So-so & 31 & 26 & 6 & 17 & 37 & 24 & 3 & 50 & 1 & 20 & 4 & 36 \\
+A Little & 6 & 5 & 0 & 0 & 6 & 4 & 1 & 17 & 0 & 0 & 1 & 18 \\
+Not at all & 16 & 13 & 1 & 3 & 17 & 11 & 1 & 17 & 0 & 0 & 1 & 18 \\
+\bottomrule
+\end{tabularx}
+  \caption{Results of the questionnaire.}
+  \label{tab:questionnaire-data}
+\end{table*}
+
 \subsubsection{Analysis \& Discussion}
-As shown in social evaluation of the case study in section 3.3, we can see the findings of different opinions and feelings assessment on the security issue that the Quickomat has brought us. Learnd from and compared with the famouse study that about “Prevalence of perceived stress, symptoms of depression and sleep disturbances in relation to information and communication technology (ICT)” \citep{Sara2007}, we created our own relationship table between the Quickomat and the perceived psychological security among users, as Table below, to analyze the deep connection in this.
+As shown in social evaluation of the case study in section 3.3, we can see the findings of different opinions and feelings assessment on the security issue that the Quickomat has brought us. Learnd from and compared with the famouse study that about “Prevalence of perceived stress, symptoms of depression and sleep disturbances in relation to information and communication technology (ICT)” \citep{Sara2007}, we created our own relationship table between the Quickomat and the perceived psychological security among users, see table \ref{tab:questionnaire-data}, to analyze the deep connection in this.
 
 From which it clearly presents the perceived security or just the safety feelings among the most users. And from some perspectives, we can see that women feel more safe by using Quickomat to purchase the tickets or taking public transportation and more students than employees feel safe in this way, which proberbly means that the people without jobs are more caring about the personal security of property than the ones with payment by the companies. What's the most important is that, most of the users have started feeling it's a better and secure way to use Quickomat instead of cash transition, even though it's not the Quickomat AB's first intention of doing this (Mvh Eva, Quickomat AB, 2014).
 Also as the condition that limitations in Section 1 mentioned, the research can be also reached into the area of drivers' security aspects or some other important aspects in the future.
