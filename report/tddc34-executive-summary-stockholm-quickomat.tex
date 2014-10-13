@@ -1,0 +1,53 @@
+\documentclass[twocolumn]{article}
+
+% package loading
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+\usepackage{hyphenat}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+
+\usepackage{enumitem}
+\setlist[description]{style=nextline}
+
+\usepackage{tabularx,caption,booktabs,array}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcommand{\rowgroup}[1]{\hspace{-1em}#1}
+
+\usepackage[round]{natbib} % Harward style references
+
+\providecommand{\keywords}[1]{\textbf{\textit{Index terms---}} #1}
+
+\title{Report on Quickomat \\ Executive Summary}
+\author{Johan Angelstam, Guanqun Li, Renquan Wang, Yunsheng Kong\\
+  \{johan791|guali867|renwa331|yunko064\}@student.liu.se}
+%\date{2014}
+
+\begin{document}
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+\twocolumn[
+  \begin{@twocolumnfalse}
+    \maketitle
+    \vspace{2em}
+  \end{@twocolumnfalse}
+  ]
+  
+This paper describes information system evaluation methods, as well as a case study of a vending machine system, Quickomat. Based on theoretical frameworks widely used to evaluate different aspects of IT, the paper combines theory and a case study, with a focus on technical and social evaluation of the Quickomat. Different approaches including a questionnaire and heuristic evaluation are used in the paper to conduct the case study, in an attempt to answer the questions: (1) how good is the Quickomat's interface-usability (2) has the emergence of Quickomat reduced the criminal events of public transportation and has it had an effect on peoples percepiton of safety. By analyzing the data collected from different sources, discussion and conclusion are made to demonstrate the benefit as well as provide suggestions for improvement of the Quickomat.
+
+%Technical evaluation
+The case study shows that most of the design is in compliance with usability guidelines. The system supports multiple languages, use clear and big icon/text which is easy to distinguish, provides an undo function which enables the user to go back to a previous step.
+
+However, there are also improvements that could be made to the Quickomat system. From the questionnaire we found that novice users, are not well satisfied with the user interface of the Quickomat. Also the case study heuristics shows that instruction video/animation is needed to provide tips for the novice user.
+
+Our case study tries to evaluate the usability and highlight the possible improvements of the Quickomat. Because of the limitations in the scope of our case study, there are further aspects that can be explored in future research.
+
+% Social evaluation
+In the social evaluation of our case study, we can see different opinions and feelings on the security issue. Starting from a study about “Prevalence of perceived stress, symptoms of depression and sleep disturbances in relation to information and communication technology (ICT)”, we created our own relationship table between the Quickomat and the perceived security among users to analyze the deep connection in this.
+
+Through an email-interview with the public transportation company, \emph{Östgötatrafiken}, we attempted to get information about the Quickomat's possible influence on crime. Though, they did not provide any solid data for us to analyze, they said that the \emph{cash stop} on public transport had put an end to robberies against their employees. As the Quickomat seems to be an important option for buying tickets, especially during the night, we would say it has a role in the decrese in public transport robberies.
+
+The answers we got from the company was that the first ideas of introducing the Quickomat was not for security reasons. However, after the emergence of Quickomat and discontinuation of cash as payment, the criminal events of public transport has been reduced, especially on the drivers' personal safety where robberies is now a thing of the past.
+\end{document}
